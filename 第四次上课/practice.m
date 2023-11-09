@@ -1,0 +1,11 @@
+I = imread("fufu.jpg");
+J = imread("yao.jpg");
+K = imnoise(I,"poisson");
+M = imnoise(I,"gaussian");
+figure;
+subplot(1,3,1);
+imshow(I);
+subplot(1,3,2);
+imshow(M);
+subplot(1,3,3);
+imshow(K);
